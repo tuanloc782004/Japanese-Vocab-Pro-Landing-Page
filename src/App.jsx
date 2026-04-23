@@ -59,7 +59,9 @@ export default function App() {
           <a href="#pricing" className="btn-pro-primary flex items-center justify-center gap-2">
             Xem các gói học liệu <HiOutlineArrowRight />
           </a>
-          <button className="btn-pro-outline">Dùng thử bản mẫu</button>
+          <a href="https://drive.google.com/drive/folders/1RnjQgTrYSuXNmPUgBCjP9bQLSqAeNHoR?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <button className="btn-pro-outline">Dùng thử bản mẫu</button>
+          </a>
         </div>
       </section>
 
