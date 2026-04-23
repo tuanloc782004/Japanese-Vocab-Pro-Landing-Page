@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@theme {
+  --color-brand-primary: #6366F1;
+  --color-brand-dark: #0F172A;
+  --color-brand-success: #10B981;
+  --color-surface: #F8FAFC;
+
+  --font-sans: "Inter", sans-serif;
+
+  --shadow-pro: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-brand-dark antialiased;
+    font-family: var(--font-sans);
+  }
+}
+
+.btn-pro-primary {
+  @apply bg-brand-primary text-white px-8 py-4 rounded-2xl font-bold transition-all hover:bg-indigo-700 hover:shadow-indigo-500/20 hover:shadow-lg active:scale-95;
+}
+
+.btn-pro-outline {
+  @apply border-2 border-slate-200 text-slate-600 px-8 py-4 rounded-2xl font-bold transition-all hover:bg-slate-50 active:scale-95;
+}
+
+.pro-card {
+  @apply bg-white border border-slate-100 rounded-3xl p-8 transition-all duration-300 hover:shadow-pro;
+}
